@@ -1,0 +1,332 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+    background-color: rgb(0, 0, 0);
+    word-spacing: -2px;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track  {
+    background: rgb(58, 58, 58);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 0, 0, 0.9);
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.486);
+}
+
+header {
+    border-bottom: 2px solid rgb(54, 0, 0);
+    position: fixed;
+    width: 100vw;
+    z-index: 99;
+}
+
+#fixo {
+    height: 10%;
+}
+
+.anchor {
+    scroll-margin: 65px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#abrir-menu, #fechar-menu {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+}
+
+#abrir-menu:hover, #fechar-menu:hover {
+    color: rgba(255, 0, 0, 0.9);
+}
+
+nav > #logo {
+    height: 35px;
+}
+
+nav > #menu > li {
+    display: inline-block;
+    padding: 20px;
+}
+
+#menu > li > a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#menu > li > a:hover {
+    color: rgb(175, 0, 0);
+    transition: color .5s ease;
+}
+
+main > #home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(175, 0, 0);
+}
+
+main > h1 {
+    color: white;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+main > h2 {
+    color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    margin-left: 70px;
+}
+
+p.texto {
+    padding: 5px;
+    color: white;
+    text-indent: 1.5em;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+#sobre {
+    width: 40%;
+}
+
+#home > #triplice {
+    width: 50vw;
+}
+
+.p-destaque {
+    color: rgba(255, 0, 0, 0.7);
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(175, 0, 0);
+}
+
+#hero > #hero-sobre {
+    color: white;
+    width: 40%;
+}
+
+#hero > #miranha {
+    height: 75vh;
+    margin-bottom: 20px;
+}
+
+#filmes {
+    background: black url("../images/logo-spider.jpg") no-repeat center center;
+    background-size: contain;
+    color: white;
+    padding: 20px;
+    border-bottom: 1px solid rgb(175, 0, 0);
+}
+
+#filmes > h3 {
+    padding: 20px 5px;
+}
+
+#filmes > #tobey {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding-bottom: 20px;
+}
+
+#filmes > #andrew {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding: 20px;
+}
+
+#filmes > #holland {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding-bottom: 20px;
+}
+
+.card-filmes:hover {
+    transition: transform .3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.card-filmes > img {
+    border-radius: 1%;
+    width: 25vh;
+}
+
+#aranhaverso {
+    background: black url(../images/aranhaverso.png) no-repeat center center;
+    background-size: contain;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(175, 0, 0);
+}
+
+#aranhaverso > #aranhaverso-sobre {
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#aranhaverso > img#aranhaverso-principal {
+    height: 50vh;
+    border-radius: 20px;
+} 
+
+#miles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid rgb(175, 0, 0);
+}
+
+#miles > #miles-sobre {
+    width: 40%;
+}
+
+#miles > img {
+    width: 35vw;
+}
+
+footer {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(255, 0, 0, 0.7);
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+    #home {
+        flex-direction: column;
+    }
+
+    #home > #sobre {
+        width: 90vw;
+    }
+
+    #home > #triplice {
+        width: 90vw;
+    }
+
+    #hero {
+        flex-direction: column;
+    }
+
+    #hero > #hero-sobre {
+        width: 90vw;
+    }
+
+    #hero > #miranha {
+        height: 90vw;
+    }
+
+    .card-filmes > img {
+        width: 23vw;
+    }
+
+    #aranhaverso {
+        flex-direction: column;
+    }
+
+    #aranhaverso > #aranhaverso-sobre {
+        width: 90vw;
+    }
+
+    #aranhaverso > img#aranhaverso-principal {
+        border-radius: 0;
+        height: 60vw;
+    }
+
+    #miles {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    #miles > #miles-sobre {
+        width: 90vw;
+    }
+
+    #miles > img {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #menu {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        left: 0;
+        transition: top 1s ease;
+        position: fixed;
+        backdrop-filter: blur(5px);
+    }
+
+    #fechar-menu {
+        display: block;
+    }
+
+    #abrir-menu {
+        display: block;
+    }
+
+    main > h1 {
+        margin-left: 20px;
+    }
+
+    main > h2 {
+        margin-left: 30px;
+    }
+}
