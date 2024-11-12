@@ -14,14 +14,22 @@ body{
     background: #000;
 }
 
+img{
+    width: 100%;
+}
+
 .container {
+    left:20%;
     position: relative;
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 1em;
     width: 800px;
     height: 500px;
     transition: all 400ms;
+    align-content: center;
 }
 
 .container:hover .box {
