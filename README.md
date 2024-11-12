@@ -1,2 +1,2 @@
 # Spider
- Site desenvolvido para treinar, sobre o webhead (miranha)
+ Site sobre o webhead (miranha), desenvolvido para treinar 
